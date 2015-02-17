@@ -10,24 +10,24 @@ package dip.lab2.student.solution1;
  * @author Mark
  */
 public class TipService {
-    private TipStrategy tip;
+    private TipStrategy tipStrategy;
     public double getTipPlusTotal(){
-        return tip.calculateTotal();
+        return tipStrategy.calculateTotal();
     }
-    public double getTip(){
-        return tip.calculateTip();
+    public double getJustTip(){
+        return tipStrategy.calculateTip();
     }
     
     public TipService(TipStrategy tip) {
-        this.tip = tip;
+        this.tipStrategy = tip;
     }
 
     public TipStrategy getTip() {
-        return tip;
+        return tipStrategy;
     }
-
+    
     public void setTip(TipStrategy tip) {
-        this.tip = tip;
+        this.tipStrategy = tip;
     }
     
     
