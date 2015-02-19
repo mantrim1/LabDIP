@@ -22,11 +22,11 @@ public class TipService {
         this.tipStrategy = tip;
     }
 
-    public TipStrategy getTip() {
+    public TipStrategy getTipStrategy() {
         return tipStrategy;
     }
     
-    public void setTip(TipStrategy tip) {
+    public void setTipStrategy(TipStrategy tip) {
         this.tipStrategy = tip;
     }
     
